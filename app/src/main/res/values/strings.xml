@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">SpacedApp</string>
+    <string name="new_osogbo">New Osogbo</string>
+    <string name="santorini">Santorini</string>
+    <string name="santorini_is_a_fantastic_cycladic_island_in_the_southern_aegean_sea_with_astonishing_volcanic_scenery_and_world_famous_sunset_vistas_it_comprises_a_luxury_oriented_destination_that_is_perfect_for_couples_with_rich_viticulture_and_history_to_dive_into">Santorini is a fantastic Cycladic island in the southern Aegean Sea with astonishing volcanic scenery and world-famous sunset vistas. It comprises a luxury-oriented destination that is perfect for couples, with rich viticulture and history to dive into.</string>
+    <string name="vr_tour">VR Tour</string>
+    <string name="gallery">Gallery</string>
+    <string name="schedule_trip">Schedule Trip</string>
+    <string name="btc">0.6 BTC</string>
+    <string name="total">Total</string>
+    <string name="btc_total">2.4 BTC</string>
+    <string name="scan_face_to_complete">Scan face to complete</string>
+    <string name="lagos">Lagos,</string>
+    <string name="los">LOS</string>
+    <string name="from_nigeria">from Nigeria</string>
+    <string name="to_new_osobgo">To New Osobgo</string>
+    <string name="checvok_port2">Checvok Port2</string>
+    <string name="trip_calendar">Trip Calendar</string>
+    <string name="departure_time">Departure Time</string>
+    <string name="_12_30_pm">12:30 PM</string>
+    <string name="_05_30_pm">05:30 PM</string>
+    <string name="_09_30_pm">09:30 PM</string>
+    <string name="seats">Seats</string>
+    <string name="how_many_adults">How many adults?</string>
+    <string name="_12_years">12 years+</string>
+    <string name="pay">Pay</string>
+    <string name="flights_desc">6 Flights Tickets \n to Santroni</string>
+    <string name="done">Done</string>
+    <string name="trending_locations_today">Trending Locations today</string>
+    <string name="discover">Discover</string>
+    <string name="you_re_all_set">You\'re all set!</string>
+</resources>

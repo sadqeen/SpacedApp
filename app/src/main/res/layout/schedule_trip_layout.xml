@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:background="@drawable/bottom_sheet_bg">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_from_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/icon_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_location_on_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/purple_500" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/lagos"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toRightOf="@+id/icon_from"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/los"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toRightOf="@+id/label1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/from_nigeria"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toRightOf="@+id/icon_from"
+                app:layout_constraintTop_toBottomOf="@+id/label1" />
+
+            <ImageView
+                android:id="@+id/icon_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_location_on_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label3"
+                app:tint="@color/purple_500" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/santorini"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/icon_to"
+                app:layout_constraintTop_toBottomOf="@+id/label3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/checvok_port2"
+                android:textColor="@color/purple_500"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/label4"
+                app:layout_constraintTop_toBottomOf="@+id/label3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/label6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="@string/to_new_osobgo"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toRightOf="@+id/icon_to"
+                app:layout_constraintTop_toBottomOf="@+id/label4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#aeaeae" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:text="@string/trip_calendar"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <CalendarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="-35dp"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:theme="@style/CalenderViewCustom"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:text="@string/departure_time"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipsgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:orientation="horizontal"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/_12_30_pm"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/chip_selector"
+                app:chipCornerRadius="4dp"
+                app:chipIconEnabled="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:checkable="true"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/_05_30_pm"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/chip_selector"
+                app:chipCornerRadius="4dp"
+                app:chipIconEnabled="false" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/_09_30_pm"
+                android:textColor="@color/white"
+                app:chipBackgroundColor="@color/chip_selector"
+                app:chipCornerRadius="4dp"
+                app:chipIconEnabled="false" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <LinearLayout
+            android:id="@+id/layout_seats"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/grey_bg">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvseats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_extra_bold"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/seats"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>
